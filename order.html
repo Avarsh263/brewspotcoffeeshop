@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - BrewSpot Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="order-page">
+        <h1>Order Your Favorite Coffee</h1>
+        <div class="product-list">
+            <!-- Example product structure -->
+            <div class="product">
+                <img src="./coffee images/americano.jpg" alt="Americano">
+                <h2>Americano</h2>
+                <p>₹300</p>
+                <button onclick="addToCart('Americano', 300)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./coffee images/expresso.jpg" alt="Espresso">
+                <h2>Espresso</h2>
+                <p>₹250</p>
+                <button onclick="addToCart('Espresso', 250)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./coffee images/cappuccino.jpg" alt="Cappuccino">
+                <h2>Cappuccino</h2>
+                <p>₹350</p>
+                <button onclick="addToCart('Cappuccino', 350)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./coffee images/iced.jpg" alt="Iced coffee">
+                <h2>Iced coffee</h2>
+                <p>₹300</p>
+                <button onclick="addToCart('Iced coffee', 300)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./coffee images/cold brew.jpg" alt="Cold Brew">
+                <h2>Cold Brew</h2>
+                <p>₹350</p>
+                <button onclick="addToCart('Cold Brew', 350)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./coffee images/milkshake.jpg" alt="Milkshake">
+                <h2>Milkshake</h2>
+                <p>₹400</p>
+                <button onclick="addToCart('Milkshake', 400)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./coffee images/bagel.jpg" alt="Bagel">
+                <h2>Bagel</h2>
+                <p>₹150</p>
+                <button onclick="addToCart('Bagel', 150)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./coffee images/croissant.jpg" alt="Croissant">
+                <h2>Croissant</h2>
+                <p>₹200</p>
+                <button onclick="addToCart('Croissant', 200)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./coffee images/muffin.jpg" alt="Muffin">
+                <h2>Muffin</h2>
+                <p>₹150</p>
+                <button onclick="addToCart('Muffin', 150)">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <section id="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: <span id="total">0.00</span></p>
+        <button id="checkout-button" onclick="checkout()">Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BrewSpot Coffee Shop. All rights reserved.</p>
+        <p>Visit us at: 123 Coffee Street, Mumbai, Maharashtra | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
